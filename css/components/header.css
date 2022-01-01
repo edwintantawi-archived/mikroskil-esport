@@ -1,0 +1,145 @@
+/* header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  border-top: 8px solid var(--accent);
+  background-color: var(--primary);
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 50%;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+  background-color: var(--accent);
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__brand {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.header__brand img {
+  height: 35px;
+  width: auto;
+}
+
+.header__cta {
+  display: none;
+  position: relative;
+  height: 70px;
+  margin: 0 1rem 0 0;
+  align-items: center;
+  column-gap: 4px;
+  font-size: 0.875rem;
+  background-color: transparent;
+  font-weight: var(--fw-bold);
+  color: var(--white);
+}
+
+.header__cta::after {
+  --lr: -10px;
+
+  content: '';
+  position: absolute;
+  height: 8px;
+  left: var(--lr);
+  right: var(--lr);
+  top: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+  background-color: var(--accent);
+}
+
+.header__toggle {
+  display: block;
+  margin: 0 0 0 10px;
+}
+
+/* navbar */
+.navbar {
+  display: none;
+  position: fixed;
+  z-index: 8;
+  left: 0;
+  top: 78px;
+  min-width: 100%;
+  height: 100vh;
+  background-color: var(--primary);
+}
+
+.navbar--active {
+  display: block;
+}
+
+.navbar__list {
+  display: flex;
+  font-size: 0.8125rem;
+
+  flex-direction: column;
+}
+
+.navbar__item > a {
+  display: block;
+  padding: 18px 1rem;
+  border-top: 1px solid var(--accent-dark);
+}
+
+.navbar__item--mobile > a {
+  font-weight: var(--fw-bold);
+}
+
+.navbar__item:hover {
+  color: var(--accent);
+  transition: 300ms;
+}
+
+/* media query */
+@media screen and (min-width: 440px) {
+  .header::after {
+    display: none;
+  }
+
+  .header__cta {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .header__toggle {
+    display: none;
+  }
+
+  .navbar {
+    display: block;
+    position: static;
+
+    min-width: auto;
+    height: auto;
+    background-color: var(--primary);
+  }
+
+  .navbar__list {
+    flex-direction: row;
+  }
+
+  .navbar__item--mobile {
+    display: none;
+  }
+
+  .navbar__item > a {
+    padding: 12px;
+    border-top: none;
+  }
+}

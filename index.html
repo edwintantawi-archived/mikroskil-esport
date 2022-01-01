@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+
+    <!-- START : google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Sora', sans-serif;
+      }
+    </style>
+    <!-- END : google fonts -->
+
+    <!-- START : css -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- END : css -->
+
+    <!-- START : javascript -->
+    <script src="./js/index.js" type="module"></script>
+    <!-- END : javascript -->
+
+    <title>Mikroskil Esports | Home</title>
+  </head>
+  <body>
+    <!-- START : header -->
+    <header class="header">
+      <div class="container header__wrapper">
+        <a href="/" class="header__brand" aria-label="Homepage">
+          <picture>
+            <source
+              media="(min-width: 440px)"
+              srcset="./assets/brand/brand-full.png"
+            />
+            <img src="./assets/brand/brand-logo.png" alt="Mikroskil Esports" />
+          </picture>
+        </a>
+        <nav class="navbar" id="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__item navbar__item--mobile">
+              <a href="#">
+                BECOME
+                <span class="text-accent">OUR</span>
+                TEAM
+              </a>
+            </li>
+            <li class="navbar__item"><a href="#">TOURNAMENT</a></li>
+            <li class="navbar__item"><a href="#">ABOUT US</a></li>
+            <li class="navbar__item"><a href="#">CONTACT</a></li>
+            <li class="navbar__item"><a href="#">OUR TEAM</a></li>
+          </ul>
+        </nav>
+
+        <div class="group-row">
+          <a href="#" class="header__cta">
+            BECOME
+            <span class="text-accent">OUR</span>
+            TEAM
+          </a>
+
+          <button
+            class="header__toggle"
+            id="navbar-toggler"
+            aria-label="Menu toggler"
+          >
+            <img src="./assets/icons/menu.svg" alt="Menu" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- END : header -->
+  </body>
+</html>
