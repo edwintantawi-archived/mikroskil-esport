@@ -1,0 +1,14 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.875rem;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.group-row {
+  display: flex;
+  align-items: center;
+}
