@@ -1,5 +1,5 @@
 .container {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 0.875rem;
 }
@@ -11,4 +11,16 @@
 .group-row {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    max-width: 980px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }

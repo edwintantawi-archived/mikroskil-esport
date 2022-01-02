@@ -1,4 +1,34 @@
 body {
+  position: relative;
   background-color: var(--primary);
   color: var(--white);
+  height: 9999px;
+}
+
+body::before,
+body::after {
+  display: none;
+  content: '';
+  position: fixed;
+  width: 24px;
+  height: 70vh;
+  background-color: var(--accent);
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+body::before {
+  left: 0;
+  clip-path: var(--trapezoid-right);
+}
+body::after {
+  right: 0;
+  clip-path: var(--trapezoid-left);
+}
+
+@media screen and (min-width: 1400px) {
+  body::before,
+  body::after {
+    display: block;
+  }
 }

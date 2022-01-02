@@ -5,4 +5,31 @@
   --fw-semi-bold: 600;
   --fw-regular: 400;
   --fw-light: 300;
+  /* font size */
+  --fs-heading-1: 2.25rem;
+  --fs-paragraph-1: 0.875rem;
+  --fs-paragraph-2: 0.75rem;
+}
+
+@media screen and (min-width: 440px) {
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    --fs-heading-1: 3rem;
+    --fs-paragraph-1: 1rem;
+    --fs-paragraph-2: 0.875rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  :root {
+    --fs-heading-1: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --fs-heading-1: 4rem;
+  }
 }

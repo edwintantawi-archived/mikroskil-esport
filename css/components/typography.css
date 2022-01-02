@@ -1,0 +1,11 @@
+.heading-1 {
+  font-size: var(--fs-heading-1);
+  font-weight: var(--fw-extra-bold);
+  line-height: 1.1;
+}
+
+.paragraph {
+  font-size: var(--fs-paragraph-1);
+  font-weight: var(--fs-regular);
+  color: var(--light-gray);
+}

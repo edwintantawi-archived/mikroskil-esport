@@ -1,0 +1,6 @@
+:root {
+  --hexagon: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  --trapezoid-bottom: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+  --trapezoid-right: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100%);
+  --trapezoid-left: polygon(0% 5%, 100% 0%, 100% 100%, 0% 95%);
+}

@@ -1,0 +1,26 @@
+.button {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+
+  color: var(--primary);
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-paragraph-2);
+  border: 1px solid var(--accent-dark);
+  transition: 300ms;
+}
+
+.button::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  inset: 10px;
+  background-color: var(--accent);
+}
+
+.button:hover {
+  filter: brightness(1.1);
+}

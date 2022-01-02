@@ -1,0 +1,40 @@
+.sponsors__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sponsors__image {
+  width: auto;
+  height: 40px;
+}
+
+@media screen and (min-width: 440px) {
+  .sponsors__wrapper {
+    gap: 2rem;
+  }
+
+  .sponsors__image {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .sponsors__image {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .sponsors__wrapper {
+    gap: 3rem;
+  }
+  .sponsors__image {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sponsors__image {
+    height: 75px;
+  }
+}
