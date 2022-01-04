@@ -1,5 +1,4 @@
 body {
-  position: relative;
   background-color: var(--primary);
   color: var(--white);
   height: 9999px;
@@ -26,9 +25,74 @@ body::after {
   clip-path: var(--trapezoid-left);
 }
 
+.skip-to-content {
+  position: fixed;
+  display: inline-block;
+  z-index: 10;
+  left: 50px;
+  top: -50px;
+  padding: 12px 26px;
+  clip-path: var(--trapezoid-bottom);
+  background-color: var(--accent);
+  transition: 300ms;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+.line {
+  display: none;
+  position: fixed;
+  width: 1400px;
+  right: 50%;
+  top: 0;
+  bottom: 0;
+  transform: translateX(50%);
+}
+
+.line__group {
+  position: absolute;
+  height: 100vh;
+  width: 1px;
+  background-color: var(--secondary);
+}
+
+.line__left {
+  left: 0;
+}
+
+.line__right {
+  right: 0;
+}
+
+.line__dot {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 20px;
+  height: 22px;
+  clip-path: var(--hexagon);
+  background-color: var(--accent);
+}
+
+.line__left > .line__dot {
+  top: 150px;
+}
+
+.line__right > .line__dot {
+  bottom: 150px;
+}
+
 @media screen and (min-width: 1400px) {
   body::before,
   body::after {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .line {
     display: block;
   }
 }
