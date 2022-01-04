@@ -10,9 +10,9 @@
 .header::after {
   content: '';
   position: absolute;
-  height: 8px;
+  height: 10px;
   width: 50%;
-  top: 0;
+  top: -2px;
   right: 50%;
   transform: translateX(50%);
   clip-path: var(--trapezoid-bottom);
@@ -54,11 +54,11 @@
 
   content: '';
   position: absolute;
-  height: 8px;
+  height: 10px;
   left: var(--lr);
   right: var(--lr);
-  top: 0;
-  clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+  top: -2px;
+  clip-path: var(--trapezoid-bottom);
   background-color: var(--accent);
 }
 
