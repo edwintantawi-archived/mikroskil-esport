@@ -31,6 +31,21 @@
     <title>Mikroskil Esports | Home</title>
   </head>
   <body>
+    <!-- START : skip to content -->
+    <a href="#" class="skip-to-content link">SKIP TO CONTENT</a>
+    <!-- END : skip to content -->
+
+    <!-- START : line indicator -->
+    <div aria-hidden="true" class="line">
+      <div class="line__group line__left">
+        <div class="line__dot" id="indicator-left"></div>
+      </div>
+      <div class="line__group line__right">
+        <div class="line__dot" id="indicator-right"></div>
+      </div>
+    </div>
+    <!-- END : line indicator -->
+
     <!-- START : header -->
     <header class="header">
       <div class="container header__wrapper">
@@ -52,7 +67,7 @@
                 TEAM
               </a>
             </li>
-            <li class="navbar__item"><a href="#">TOURNAMENT</a></li>
+            <li class="navbar__item"><a href="#">COMMUNITIES</a></li>
             <li class="navbar__item"><a href="#">ABOUT US</a></li>
             <li class="navbar__item"><a href="#">CONTACT</a></li>
             <li class="navbar__item"><a href="#">OUR TEAM</a></li>
@@ -78,69 +93,71 @@
     </header>
     <!-- END : header -->
 
-    <!-- START : hero -->
-    <section class="hero">
-      <div class="container hero__wrapper">
-        <!-- left -->
-        <div class="hero__left">
-          <div>
-            <img
-              src="./assets/brand/brand-logo.png"
-              alt="Mikroskil Esports"
-              class="hero__brand"
-            />
-            <h1 class="hero__title heading-1">MIKROSKIL ESPORTS</h1>
-            <p class="hero__description paragraph">
-              Uniting Mikroskil students through competitive esports games.
-            </p>
-            <div class="cta-wrapper">
-              <a href="#" class="hero__cta button">BECOME OUR TEAM</a>
-              <a href="#" class="link">MEET OUT TEAM</a>
+    <main class="container">
+      <!-- START : hero -->
+      <section class="hero">
+        <div class="hero__wrapper">
+          <!-- left -->
+          <div class="hero__left">
+            <div>
+              <img
+                src="./assets/brand/brand-logo.png"
+                alt="Mikroskil Esports"
+                class="hero__brand"
+              />
+              <h1 class="hero__title heading-1">MIKROSKIL ESPORTS</h1>
+              <p class="hero__description paragraph">
+                Uniting Mikroskil students through competitive esports games.
+              </p>
+              <div class="cta-wrapper">
+                <a href="#" class="hero__cta button">BECOME OUR TEAM</a>
+                <a href="#" class="link">MEET OUT TEAM</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- right -->
-        <div class="hero__right">
+          <!-- right -->
+          <div class="hero__right">
+            <img
+              src="./assets/images/hero-image.png"
+              alt="Tournament and communities"
+              class="hero__image"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- END : hero -->
+
+      <!-- START : sponsors -->
+      <section class="sponsors">
+        <div class="sponsors__wrapper">
           <img
-            src="./assets/images/hero-image.png"
-            alt="Tournament and communities"
-            class="hero__image"
+            src="./assets/images/sponsors/sponsor-mikroskil-university.png"
+            alt="Mikroskil university"
+            class="sponsors__image"
+            title="Mikroskil university"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-kampus-merdeka.png"
+            alt="Kampus merdeka"
+            class="sponsors__image"
+            title="Kampus merdeka"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-moonton-student-leader.png"
+            alt="Moonton student leader"
+            class="sponsors__image"
+            title="Moonton student leader"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-mobile-legends.png"
+            alt="Mobile legends"
+            class="sponsors__image"
+            title="Mobile legends"
           />
         </div>
-      </div>
-    </section>
-    <!-- END : hero -->
-
-    <!-- START : sponsors -->
-    <section class="sponsors">
-      <div class="container sponsors__wrapper">
-        <img
-          src="./assets/images/sponsors/sponsor-mikroskil-university.png"
-          alt="Mikroskil university"
-          class="sponsors__image"
-          title="Mikroskil university"
-        />
-        <img
-          src="./assets/images/sponsors/sponsor-kampus-merdeka.png"
-          alt="Kampus merdeka"
-          class="sponsors__image"
-          title="Kampus merdeka"
-        />
-        <img
-          src="./assets/images/sponsors/sponsor-moonton-student-leader.png"
-          alt="Moonton student leader"
-          class="sponsors__image"
-          title="Moonton student leader"
-        />
-        <img
-          src="./assets/images/sponsors/sponsor-mobile-legends.png"
-          alt="Mobile legends"
-          class="sponsors__image"
-          title="Mobile legends"
-        />
-      </div>
-    </section>
-    <!-- END : sponsors -->
+      </section>
+      <!-- END : sponsors -->
+    </main>
   </body>
 </html>
