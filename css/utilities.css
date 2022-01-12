@@ -8,6 +8,10 @@
   color: var(--accent);
 }
 
+.text-red {
+  color: var(--red);
+}
+
 .group-row {
   display: flex;
   align-items: center;

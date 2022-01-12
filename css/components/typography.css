@@ -4,8 +4,20 @@
   line-height: 1.1;
 }
 
-.paragraph {
+.heading-2 {
+  font-size: var(--fs-heading-2);
+  font-weight: var(--fw-extra-bold);
+  line-height: 1.1;
+}
+
+.paragraph-1 {
   font-size: var(--fs-paragraph-1);
+  font-weight: var(--fs-regular);
+  color: var(--light-gray);
+}
+
+.paragraph-2 {
+  font-size: var(--fs-paragraph-2);
   font-weight: var(--fs-regular);
   color: var(--light-gray);
 }
