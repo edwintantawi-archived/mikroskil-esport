@@ -1,0 +1,22 @@
+.section {
+  margin-bottom: 100px;
+}
+
+.section__title {
+  text-align: center;
+  margin: 0 0 24px 0;
+}
+
+.section__action {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) {
+  .section__title {
+    text-align: left;
+  }
+
+  .section__action {
+    max-width: 280px;
+  }
+}
