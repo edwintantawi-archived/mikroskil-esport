@@ -6,12 +6,40 @@
   --fw-regular: 400;
   --fw-light: 300;
   /* font size */
-  --fs-heading-1: 2.25rem;
-  --fs-heading-2: 1.75rem;
-  --fs-paragraph-1: 0.875rem;
-  --fs-paragraph-2: 0.75rem;
+  --fs-heading-1: 2.2rem;
+  --fs-heading-2: 1.6rem;
+  --fs-heading-3: 0.9rem;
+
+  --fs-paragraph-1: 0.9rem;
+  --fs-paragraph-2: 0.7rem;
 }
 
+@media screen and (min-width: 1000px) {
+  :root {
+    --fs-heading-1: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --fs-heading-1: 3.4rem;
+  }
+}
+
+/* :root {
+  --fw-extra-bold: 800;
+  --fw-bold: 700;
+  --fw-semi-bold: 600;
+  --fw-regular: 400;
+  --fw-light: 300;
+
+  --fs-heading-1: 2.25rem;
+  --fs-heading-2: 1.75rem;
+  --fs-heading-3: 1.125rem;
+  --fs-paragraph-1: 0.875rem;
+  --fs-paragraph-2: 0.75rem;
+} */
+/* 
 @media screen and (min-width: 440px) {
 }
 
@@ -19,6 +47,8 @@
   :root {
     --fs-heading-1: 3rem;
     --fs-heading-2: 2.25rem;
+    --fs-heading-3: 1rem;
+
     --fs-paragraph-1: 1rem;
     --fs-paragraph-2: 0.875rem;
   }
@@ -35,4 +65,4 @@
   :root {
     --fs-heading-1: 4rem;
   }
-}
+} */

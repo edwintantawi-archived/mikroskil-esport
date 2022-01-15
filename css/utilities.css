@@ -4,6 +4,10 @@
   padding: 0 0.875rem;
 }
 
+.text-gray {
+  color: var(--light-gray);
+}
+
 .text-accent {
   color: var(--accent);
 }
@@ -12,9 +16,14 @@
   color: var(--red);
 }
 
+.text-green {
+  color: var(--green);
+}
+
 .group-row {
   display: flex;
   align-items: center;
+  column-gap: 8px;
 }
 
 @media screen and (min-width: 1000px) {
