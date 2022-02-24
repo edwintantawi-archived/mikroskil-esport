@@ -1,5 +1,5 @@
 .section {
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .section__title {
@@ -11,6 +11,12 @@
   margin: 0 auto;
 }
 
+.tournament-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
 @media screen and (min-width: 800px) {
   .section__title {
     text-align: left;
@@ -18,5 +24,9 @@
 
   .section__action {
     max-width: 280px;
+  }
+
+  .tournament-section {
+    row-gap: 100px;
   }
 }
