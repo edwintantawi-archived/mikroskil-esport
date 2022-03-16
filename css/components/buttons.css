@@ -11,6 +11,7 @@
   font-size: var(--fs-paragraph-2);
   border: 1px solid var(--accent-dark);
   transition: 300ms;
+  cursor: pointer;
 }
 
 .button::before {
